@@ -15,7 +15,7 @@
             C. Allow for user-added data in the form of additional files, axes, and metadata
                 This is done using a folder/HDF5-based structure.
 
-    2. File or folder structure
+2. File or folder structure
         A mspix file may be either a 'loose' collection of files in a folder or a 'packed',
         HDF5-based file with a similar structure. The advantages of the loose representation is that
         it:
@@ -27,7 +27,7 @@
         The advantages of the packed representation are that it facilitates file storage and sharing
         by ensuring related data remain together
 
-    3. Loose representation file structure
+3. Loose representation file structure
         The loose file is a folder that contains the following files:
         metadata.json
             A JSON-compliant, UTF-8 encoded text file of all metadata for the image. At this time, 
@@ -150,7 +150,7 @@
                     could be possible to reduce the data.
                 C. A corresponding optical light microscopy image of the area imaged
 
-    4. Packed representation file structure
+4. Packed representation file structure
         The packed file representation is an HDF5 file that contains equivalent information to the
         loose files as HDF5 datasets. These files translated to datasets are:
         
@@ -184,7 +184,7 @@
             "intensities.xXX" loose-representation file specified in section 3. The numeric type
             does not need to be otherwise specified as it is known by the HDF5 dataset.
         
-    5. Image orientation and shape
+5. Image orientation and shape
         All mspix images start with pixel at index 0, row: 0, column: 0 where row 0 is at the top
         of the image and column 0 is at the left of the image. The image then proceeds in the
         "x" direction (along the row 0, incrementing column; row-major) until it is at the right
@@ -195,7 +195,7 @@
         regarding the stage motion during acquisition is desired, it may be provided in the
         metadata.json file or as a separate file within the folder/zip file.
 
-    6. Limitations and restrictions
+6. Limitations and restrictions
         The mspix file format takes advantage of some restrictions, limitations, and constraints 
         that are common in current mass spectrometry imaging experiments. These constraints do
         not apply to many mass spectrometry images, which means that mspix is not suitable for
