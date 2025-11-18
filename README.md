@@ -192,7 +192,7 @@ The layout of mspix images is constant and independant of the stage or beam moti
         regarding the stage motion during acquisition is desired, it may be provided in the
         metadata.json file or as a separate file within the folder/zip file.
 
-## 6. Limitations and restrictions
+## Limitations and restrictions
 
 The mspix file format takes advantage of some restrictions, limitations, and constraints 
 that are common in current mass spectrometry imaging experiments. These constraints do
